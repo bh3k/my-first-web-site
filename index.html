@@ -1,50 +1,106 @@
-<!doctype html>
 <html>
 
 <head>
-    <title>경이네 이야기</title>
-    <meta charset="utf-8">
+    <title>특수교사 경T</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        h1 {
-            color: darkolivegreen;
-        }
-
-        h1:hover {
-            color: aquamarine;
+        section {
+            background: url(https://img.freepik.com/free-photo/calathea-orbifolia-by-a-white-wall_53876-146282.jpg?w=2000&t=st=1694956315~exp=1694956915~hmac=6efebce131c6b2c52ac1ceb7d0bb4e1f9208a0cfe4305215d243dfc86ab05f91) fixed;
+        height: 650px;
         }
 
         h1 {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Cafe24Supermagic-Bold-v1.0';
+            font-size: 6rem;
+            position:absolute;
+            top: 25px;
+            left: 80px;
+            width: 550px;
         }
 
-        #hk {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: darkgoldenrod;
+
+        #intro {
+            font-family: 'TAEBAEKmilkyway';
+            font-size: 1rem;
+            position:absolute;
+            top: 380px;
+            left: 90px;
+            line-height: 160%;
+            animation: slide 3s ease-out;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            place-items: center;
+            margin: 100px;
+            padding-top: 30px;
+        }
+
+        .image-box {
+            display: flex;
+            /* flexbox를 사용합니다. */
+            flex-direction: column;
+            /* 자식 요소들을 수직으로 배열합니다. */
+            align-items: center;
+            /* 수평 중앙 정렬 */
+            justify-content: center;
+            /* 수직 중앙 정렬 */
+            width: 500px;
+        }
+
+        .caption {
+            font-family: 'Cafe24Supermagic-Bold-v1.0';
+            margin-top: 30px;
+            font-size: 2rem;
+            background-color: rgba(237, 184, 193, 0.695);
+            border-radius: 10px;
+            width: 50%;
+            text-align: center;
+            /* 텍스트 내용을 중앙 정렬 */
+
+        }
+
+        a {
+            color: rgb(57, 53, 53);
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgba(207, 178, 236, 0.877);
         }
     </style>
-</head>
 
 <body>
-    <h1><a href="index.html">경이쓰</a></h1>
-    <ol>
-        <li><a href="1.html">경T소개</a></li>
-        <li><a href="2.html">경이 일상 소개</a></li>
-        <li><a href="3.html">방명록</a></li>
-    </ol>
+    <section>
+        <h1>특수교사 경T의 오늘 우리반</h1>
+        <div id="intro">
+            안녕하세요. 경T의 교실에 오신 것을 환영합니다.<br>
+            서울 어딘가, 초등학교 한 교실에서 특수교육대상학생을 만나는 7년차 특수교사입니다.<br>
+            존중이 싹트는 교실, 몸과 마음이 안전한 교실, 건강한 성장통을 겪는 교실을 꿈꿉니다.<br>
+            우리는 호흡을 나누는 수업을 중요하게 여깁니다.<br>
+            배운 것을 나누기 위해 공부하는 선생님입니다.<br>
+            내가 배운 것을 내 학생 뿐만 아니라, 여러분에게도 나눕니다. 마음껏 탐험하세요!
+        </div>
+    </section>
+    <div id="container">
+        <div class="image-box">
+            <img src="cl1.jpg" width="400px">
+            <a class="caption" href="1.html">경T의 교실</a>
+        </div>
+        <div class="image-box">
+            <img src="cl2.jpg" width="400px">
+            <a class="caption" href="2.html">경T의 교육과정</a>
+        </div>
+        <div class="image-box">
+            <img src="cl3.jpg" width="400px">
+            <a class="caption" href="3.html">경T의 견학</a>
+        </div>
+    </div>
 
-    <h2><a href="https://blog.naver.com/2668hk" target="_blank" title="경t블로그">특수교사 경T</a>의 교실에 오신 것을 환영합니다</h2>
-    존중, 배려, 사랑, 권리. 당신과 내가 서로 존중할 수 있는 가치를 가졌기를 바랍니다.
-    <img src="study.jpg" width="50%">
-    <p>초등학교 1학년, 2학년 아이들 6명과 함께 생활하는 특수교사입니다.<br>매일 매일 웃음꽃이 피어나는 우리반으로 놀러오세요.</p>
-    <pre>
-    우리 반에는 매 주 중요한 루틴이 있습니다. 
-
-    첫째, 매일 아침 친구들과 인사를 나눕니다. 잠은 잘 잤는지, 밥은 먹고 왔는지 다정한 눈빛으로 인사를 나눠요.
-    둘째, 
-    </pre>
-
-    <h1 id="hk">경이의 일상생활을 구경하세요</h1>
 </body>
+</head>
 
 </html>
